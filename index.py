@@ -1,4 +1,4 @@
-#xkcd API Teste
+#xkcd API
 import os
 from bottle import request, template, route, run
 import requests
@@ -32,6 +32,7 @@ def inicio():
         </form>
         '''
 
+#Função que mostra a história XKCD; pode ser tanto aleatória, quanto por ano
 @route('/historia', method='GET')
 def exibir_imagem():
     tipo = str(request.params.get('tipo'))
@@ -53,6 +54,9 @@ def exibir_imagem():
     else:
         ano = int(request.params.get('ano'))
 
+        #id_relativo_historia_atual é uma variável que guarda qual a ordinalidade das histórias em cada ano. 
+        #Por exemplo, se o id relativo for 5 e ano for 2017, refere-se à quinta história de 2017.
+        #Try Except foi colocado aqui para a situação do usuário chegar nessa página através da Página Inicial, onde não há a variável id_historia na URL.
         try:
             id_relativo_historia_atual = int(request.params.get('id_historia'))
         except:
