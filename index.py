@@ -1,4 +1,5 @@
 #xkcd API Teste
+import os
 from bottle import request, template, route, run
 import requests
 from random import randint
