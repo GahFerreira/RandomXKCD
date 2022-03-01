@@ -1,3 +1,3 @@
 # RandomXKCD
 
-Projeto que gera histórias do XKCD aleatoriamente ou por ano.
+Um site simples que usa Bottle.py como base, cujo objetivo é mostrar uma história XKCD aleatória.
