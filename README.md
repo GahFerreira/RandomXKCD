@@ -1,3 +1,5 @@
 # RandomXKCD
 
-Um site simples que usa Bottle.py como base, cujo objetivo é mostrar uma história XKCD aleatória.
+Um site simples feito em Python com Bottle.py cujo objetivo é mostrar uma história XKCD aleatória.
+
+[Teste ele aqui!](https://random-xkcd-gah.herokuapp.com/)
